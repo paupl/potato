@@ -1,0 +1,32 @@
+
+@import "variables";
+@import "mixins";
+@import "colors";
+@import "animations";
+
+@import "small";
+
+/**container and layout*/
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+ 
+    @include border-box;
+ 
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 50px;
+}
+
+footer {
+	margin: auto;
+}
+
+@import "small";
+@import "medium";
+@import "large";

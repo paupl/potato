@@ -1,0 +1,23 @@
+@media #{$breakpoint-medium} {
+	
+	.love-animation {
+		margin:auto;
+	}		
+	
+	.details-container .testimonial-container .photo {
+		margin: auto;
+		float: none;
+	}
+	
+	.button-link {
+		padding:10px;
+	}
+	@for $i from 1 through $grid-columns {
+	 
+	    .column-#{$i} { 
+	        width: 100% / $grid-columns * $i;
+	    }
+	 
+	}	
+}
+	

@@ -1,0 +1,12 @@
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em; 
+ 
+// breakpoints
+$breakpoint-small: "only screen and (max-width: 768px)";
+$breakpoint-medium: "only screen and (max-width: 1010px) and (min-width: 768px)";
+$breakpoint-large: "only screen and (min-width: 1010px)";
+
+//link selectors
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';

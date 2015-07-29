@@ -1,0 +1,73 @@
+/** Animation **/
+
+.love-animation {
+	width:100px;
+	height:100px;
+	position:relative;
+	background:url('../assets/heart-bg.png') no-repeat center;
+	animation-name: 'heart-beat';
+	animation-duration: 2s;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.loading-animation {
+	width: 100px;
+	height: 100px;
+	margin:30px auto;
+	padding:20px 0px;
+	background-color: coral;
+	animation: square-to-circle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+
+ 
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:coral;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:50% 0 0 0;
+    background:darksalmon;
+    transform:rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:indianred;
+    transform:rotate(90deg);
+  }
+  75%  { 
+    border-radius:50% 50% 50% 0;
+    background:lightcoral;
+    transform:rotate(135deg);
+  }
+  100% {  
+    border-radius:50%;
+    background:darksalmon;
+    transform:rotate(180deg);
+  }
+}
+
+@keyframes heart-beat {
+	0% { -webkit-transform: scale(1); }
+	30% { -webkit-transform: scale(1); }
+	40% { -webkit-transform: scale(1.08); }
+	50% { -webkit-transform: scale(1); }
+	60% { -webkit-transform: scale(1); }
+	70% { -webkit-transform: scale(1.05); }
+	80% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+.modal.ng-hide-add.ng-hide-add-active,
+.modal.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 1s;
+  transition: all linear 1s;
+}
+
+.modal.ng-hide {
+  opacity: 0;
+}
+

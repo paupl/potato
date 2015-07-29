@@ -1,0 +1,15 @@
+@media #{$breakpoint-small} {
+	
+	header{
+		text-align: center;	
+	}
+
+	.details-container .testimonial-container .photo{
+		margin:auto;
+		float: none;
+	}	
+	
+	.love-animation {
+		margin:auto;
+	}
+}
